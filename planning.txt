@@ -1,0 +1,20 @@
+Needs a list of 9 bites. 
+
+Max of 255
+
+255 128 64 32 16 8 4 2 1 
+
+input a number
+
+from that number see if it fits in the number going left to right. If it does add a 1 and move on. If it does not then add a 0 and move on.
+
+
+Example:
+
+8 = 
+
+0 0 0 0 0 1 0 0 0
+
+129 = 
+
+0 1 0 0 0 0 0 0 1
