@@ -1,0 +1,68 @@
+Hows twos complement works.
+
+Twos complement is a way to find a negative number in binary. Firstly, you need to find the number in binary. For this we'll use 8 bit a nibble (or half a byte)
+
+
+'8 4 2 1'
+
+For this we will use number : n = 5 or '0 1 0 1
+
+To make it into twos complement, we need to invert the binary :
+
+1 0 1 0
+
+The leftmost position being used to show it's a negative number in binary.
+
+We then must add '1' to the right position. If there is a '1' in the right position it will go to the next position till it reaches a 0. All 1s between the 
+start and final destination will go to '0'
+
+For example:
+
+1 0 1 1
+
+will turn to 
+
+1 1 0 0 
+
+Anyway, back to the problem. 
+
+We have made the binary to negative ( 1 0 1 0 )
+
+and we now must add '1' that will turn to:
+
+1 0 1 1
+
+In finally, 1 0 1 1 is -10 in binary.
+
+
+
+2s comp to Dewi Decimal:
+
+you do the same as 2s comp. you flip and add 1 
+(you must do that on the 2s comp binary. If you were to do that on the standard positive binary you'd justs get the twos comp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------PLAN--------------------------------
+
+
+
+Add binary to a list
+
+Loop thorough the list as 'i'. If i == 1 then change to a 0 and vice versa. 
+
+Add 1 to the end of the list. 
+If its already a 1 then loop from the reverse of the list and find the closest 0. then go from the 
+location of the 0 and and end of the list and replace it with 0
+
